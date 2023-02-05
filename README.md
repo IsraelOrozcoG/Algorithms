@@ -14,6 +14,8 @@
 
 [Leap](excersim/basico/Leap.js)
 
+[Triangle](excersim/basico/Triangle.js)
+
 [Collatz Conjeture](excersim/basico/Collatz_Conjecture.js)
 
 ![Alt text](img/exercismpage.jpg)
