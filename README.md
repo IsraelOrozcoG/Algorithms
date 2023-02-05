@@ -8,5 +8,12 @@
 
 [Two Fer](excersim/basico/Two_Fer.js)
 
+[Reverse String](excersim/basico/Reverse_string.js)
+
+[RNA Transcription](excersim/basico/RNA_transcription.js)
+
+[Leap](excersim/basico/Leap.js)
+
+
 ![Alt text](img/exercismpage.jpg)
 
