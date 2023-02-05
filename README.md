@@ -18,5 +18,7 @@
 
 [Collatz Conjeture](excersim/basico/Collatz_Conjecture.js)
 
+[Pangram](excersim/basico/Pangram.js)
+
 ![Alt text](img/exercismpage.jpg)
 
