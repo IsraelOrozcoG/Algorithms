@@ -20,6 +20,8 @@
 
 [Pangram](excersim/basico/Pangram.js)
 
+[Raindrop](excersim/basico/Raindrops.js)
+
 [Hamming](excersim/basico/Hamming.js)
 
 ![Alt text](img/exercismpage.jpg)
