@@ -20,5 +20,7 @@
 
 [Pangram](excersim/basico/Pangram.js)
 
+[Hamming](excersim/basico/Hamming.js)
+
 ![Alt text](img/exercismpage.jpg)
 
