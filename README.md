@@ -24,5 +24,7 @@
 
 [Hamming](excersim/basico/Hamming.js)
 
+[Rail Fence Cipher](excersim/basico/Rail_Fence_Cipher.js)
+
 ![Alt text](img/exercismpage.jpg)
 
