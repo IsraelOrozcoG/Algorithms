@@ -4,6 +4,8 @@
 
 ## Retos faciles
 
+[Acronym](excersim/basico/Acronym.js)
+
 [Resitor Color](excersim/basico/Resistor_color.js)
 
 [Two Fer](excersim/basico/Two_Fer.js)
