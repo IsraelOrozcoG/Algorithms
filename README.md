@@ -24,6 +24,8 @@
 
 [Hamming](excersim/basico/Hamming.js)
 
+[PerfectNumbers](excersim/basico/Perfect_Numbers.js)
+
 [Rail Fence Cipher](excersim/basico/Rail_Fence_Cipher.js)
 
 ![Alt text](img/exercismpage.jpg)
