@@ -32,6 +32,8 @@
 
 [Rail Fence Cipher](excersim/basico/Rail_Fence_Cipher.js)
 
+[Roman Numerals](excersim/basico/Roman_Numerals.js)
+
 [Difference of Squares](excersim/basico/Difference_of_Squares.js)
 
 ![Alt text](img/exercismpage.jpg)
