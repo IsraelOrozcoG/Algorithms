@@ -4,6 +4,8 @@
 
 ## Retos faciles
 
+[Armstrong Number](excersim/basico/Armstrong_Number.js)
+
 [Acronym](excersim/basico/Acronym.js)
 
 [Resitor Color](excersim/basico/Resistor_color.js)
@@ -15,6 +17,8 @@
 [Reverse String](excersim/basico/Reverse_string.js)
 
 [RNA Transcription](excersim/basico/RNA_transcription.js)
+
+[D&D Character](excersim/basico/D&D_character.js)
 
 [Leap](excersim/basico/Leap.js)
 
