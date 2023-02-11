@@ -22,6 +22,8 @@
 
 [Leap](excersim/basico/Leap.js)
 
+[Protein Translations](excersim/basico/Protein_Translations.js)
+
 [Triangle](excersim/basico/Triangle.js)
 
 [Collatz Conjeture](excersim/basico/Collatz_Conjecture.js)
