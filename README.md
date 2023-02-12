@@ -3,6 +3,7 @@
     Los algoritmos realizados son de la pagina https://exercism.org del apartado de javascript
 
 ## Retos faciles
+[Anagram](excersim/basico/Acronym.js)
 
 [Armstrong Number](excersim/basico/Armstrong_Number.js)
 
@@ -34,13 +35,15 @@
 
 [Hamming](excersim/basico/Hamming.js)
 
-[PerfectNumbers](excersim/basico/Perfect_Numbers.js)
+[Perfect Numbers](excersim/basico/Perfect_Numbers.js)
 
 [Rail Fence Cipher](excersim/basico/Rail_Fence_Cipher.js)
 
 [Roman Numerals](excersim/basico/Roman_Numerals.js)
 
 [Difference of Squares](excersim/basico/Difference_of_Squares.js)
+
+[Nucleotide Count](excersim/basico/Nucleotide_Count.js)
 
 ![Alt text](img/exercismpage.jpg)
 
