@@ -9,6 +9,7 @@ class List {
         this.head = null;
         this.size = 0;
     }
+    
 
     add(element) {
         let node = new Node(element);
@@ -45,15 +46,14 @@ class List {
 
     deleteFirst() {
         let actual = this.head;
-        if (this.size != 0) {
-            console.log(this.size);
-            console.log(actual.next);
-            //actual=actual.next;
+        if (this.size >0 ) {
+           // console.log(this.size);
+           // console.log(actual.next);
             this.head = actual.next;
-
-            console.log(this.size);
+           // console.log(this.size);
             this.size--;
         } else {
+            this.head=null;
             console.log(`Nothing to delete`);
         }
 
@@ -63,18 +63,22 @@ class List {
         let actual = this.head;
         let past = null;
 
-        while (actual.next) {
-            past = actual;
-            actual = actual.next;
+        if(this.size>0){
+            while (actual.next) {
+                past = actual;
+                actual = actual.next;
+                past.next = actual.next;
+                this.size--;  
+            }
+    
 
-        }
-
-            past.next = actual.next;
-        this.size--;
-
+        }else {
+            this.head=null;
+            console.log(`Nothing to delete in deleteLast`);
     }
 
-
+   
+    }
 
     printList() {
         let actual = this.head;
@@ -86,16 +90,5 @@ class List {
         console.log(data);
     }
 }
+/************************ */
 const list = new List();
-list.deleteFirst();
-list.add(652);
-list.add(9);
-list.add(10);
-list.add(65);
-list.printList();
-list.deleteLast();
-list.printList();
-list.deleteLast();
-list.printList();
-list.deleteLast();
-list.printList();
