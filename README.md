@@ -2,7 +2,9 @@
     
     Los algoritmos realizados son de la pagina https://exercism.org del apartado de javascript
 
-## Retos faciles
+## Retos 
+<details>
+  <summary>Retos Faciles</summary>
 
 [Acronym](excersim/basico/Acronym.js)
 
@@ -53,6 +55,8 @@
 [Triangle](excersim/basico/Triangle.js)
 
 [Two Fers](excersim/basico/Two_Fer.js)
+
+</details>
 
 ![Alt text](img/exercismpage.jpg)
 
