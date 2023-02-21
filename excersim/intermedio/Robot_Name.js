@@ -10,6 +10,7 @@ let robotName =()=>{
             }
             return robot;
 }
+
 let robots=[];
 robots.push(robotName());
 console.log(robots);
@@ -21,5 +22,8 @@ robots.push(robotName());
 console.log(robots);
 robots.push(robotName());
 console.log(robots);
-
+robots.push("WX123");
+console.log(robots);
+robots.forEach(function(item, i) { if (item == "WX123") robots[i] =robotName() ; });
+console.log(robots);
 
