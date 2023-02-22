@@ -11,6 +11,10 @@ let robotName =()=>{
             return robot;
 }
 
+let compare =()=>{
+
+}
+
 let robots=[];
 robots.push(robotName());
 console.log(robots);
@@ -25,10 +29,11 @@ console.log(robots);
 robots.push("WX123");
 robots.push("AB123");
 console.log(robots);
-/**Change data without confirmation */
+/**Restart a Robot */
 robots.forEach(function(item, i) { if (item == "AB123") robots[i] ="" ; });
 console.log(robots);
-/**Change data without confirmation */
-robots.forEach(function(item, i) { if (item == "") robots[i] =robotName() ; });
+/**Change data without confirmation of duplicate */
+robots.forEach(function(item, i) { if (item == "") robots[i] =robotName() ;});
+
 console.log(robots);
 
