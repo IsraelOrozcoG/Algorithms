@@ -7,23 +7,38 @@ let wordy =(text) =>{
     let multiply =/(multiplied)/g;
     let divide =/(divided)/g;
     let result = text.match(pattern);
-    let number=0;
-    let operation="";
-    //operation=result.forEach(function(item, i) { if (item == "plus") result[i] ="plus" ;});
-    //console.log(operation);
+    let n1=0;
+    let n2=0;
+    let total=0;
+
+    let array=[];
+    array=text.match(pattern);
+    //console.log(`Arreglo ${array} `);
+
+    
+
 
     if(text.match(pattern)){
+        n1=parseInt(n1=array[0]);
+        n2=parseInt(n2=array[2]);
+        
+        
+
         if(text.match(add)=="plus"){
-            return console.log(`Here you have to add numbers`)
+            total=n1+n2;
+            return console.log(`${text}->${n1}+${n2} =${total}`)
         }
         if(text.match(less)=="minus"){
-            return console.log(`Here you have to "minus" numbers`)
+            total=n1-n2;
+            return console.log(`${text}->${n1}-${n2} =${total}`)
         }
         if(text.match(multiply)=="multiplied"){
-            return console.log(`Here you have to multiply numbers`)
+            total=n1*n2;
+            return console.log(`${text}->${n1}*${n2} =${total}`)
         }
         if(text.match(divide)=="divided"){
-            return console.log(`Here you have to divide numbers`)
+            total=n1/n2;
+            return console.log(`${text}->${n1}/${n2} =${total}`)
         }
         if(text.match(justOneNumber)){
             return console.log(`${text}->Is just ${text.match(justOneNumber)}`);
@@ -37,10 +52,10 @@ let wordy =(text) =>{
 
 let phrase ="What is 5";
 let phrase1 ="What is the meaning of these";
-let phrase2 ="What is 1 plus 8";
-let phrase3 ="What is 8 minus 1";
-let phrase4 ="What is 1 multiplied by 8";
-let phrase5 ="What is 8 divided by 1";
+let phrase2 ="What is 9 plus 8";
+let phrase3 ="What is 9 minus 9";
+let phrase4 ="What is 8 multiplied by 8";
+let phrase5 ="What is 8 divided by 3";
 wordy(phrase);
 wordy(phrase1);
 wordy(phrase2);
