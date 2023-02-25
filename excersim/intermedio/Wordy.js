@@ -13,10 +13,6 @@ let wordy =(text) =>{
 
     let array=[];
     array=text.match(pattern);
-    //console.log(`Arreglo ${array} `);
-
-    
-
 
     if(text.match(pattern)){
         n1=parseInt(n1=array[0]);
