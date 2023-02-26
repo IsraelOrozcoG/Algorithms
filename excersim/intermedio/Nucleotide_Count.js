@@ -6,8 +6,8 @@ let nucleotideCount =(strand) =>{
              strand.charAt(i)=='a'||strand.charAt(i)=='A'? a++
             :strand.charAt(i)=='g'||strand.charAt(i)=='G'? g++
             :strand.charAt(i)=='c'||strand.charAt(i)=='C'? c++
-            :strand.charAt(i)=='t'||strand.charAt(i)=='T'? t++
-            : console.log("");
+            : t++;
+            
         }
         return console.log(`"${strand}"->'A':${a},'C':${c},'G':${g},'T':${t}`);
     }else{
