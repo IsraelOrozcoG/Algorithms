@@ -12,6 +12,18 @@ const ALLERGIES ={
         gluten:1024
 };
 
-let allergies=()=>{
+let allergies=(myAllergies)=>{
+        let allergiesValue =[];
+        let totalValue=0;
+        console.log(myAllergies.length);
+        for(let i=0;i<myAllergies.length;i++){
+                allergiesValue.push(ALLERGIES[myAllergies[i]]);
+                totalValue+=allergiesValue[i];
+        }
 
+        return totalValue;
 }
+
+let personAllergies =["eggs", "penauts", "pollen"];
+
+console.log(allergies(personAllergies));
