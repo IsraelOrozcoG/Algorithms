@@ -12,6 +12,18 @@ const ALLERGIES ={
         gluten:1024
 };
 
+const ALLERGIES_VALUES ={
+        0:'',
+        1:'eggs',
+        2:'penauts',
+        4:'shelfish',
+        8:'strawberries',
+        16:'tomatoes',
+        32:'chocolate',
+        64:'pollen',
+        128:'cats'
+};
+
 let allergies=(myAllergies)=>{
         let allergiesValue =[];
         let totalValue=0;
@@ -24,6 +36,27 @@ let allergies=(myAllergies)=>{
         return totalValue;
 }
 
-let personAllergies =["eggs", "penauts", "pollen"];
+let allergiesScore=(value) =>{
+        let allergiesScore =[];
+        let result =0;
+        let j=0;
+        let qpasa=0;
+        result = value.toString(2);
+        binaryValues=0;
+        allergieName ="";
 
+        for(i=result.length;i>=0;i--){
+                                   
+                        allergiesScore.push((result.charAt(i))*(Math.pow(2, j-1)));
+                        allergieName+= `${ALLERGIES_VALUES[allergiesScore[j]]} `;
+                        j++; 
+        }
+       
+
+        return allergieName;
+}
+
+let personAllergies =["eggs", "penauts", "pollen"];
+let personScore=127;
 console.log(allergies(personAllergies));
+console.log(allergiesScore(personScore));
