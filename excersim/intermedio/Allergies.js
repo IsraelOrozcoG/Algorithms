@@ -24,23 +24,29 @@ const ALLERGIES_VALUES ={
         128:'cats'
 };
 
-let allergies=(myAllergies)=>{
+let allergies=(name,myAllergies)=>{
         let allergiesValue =[];
         let totalValue=0;
-        console.log(myAllergies.length);
-        for(let i=0;i<myAllergies.length;i++){
+        let flag=0;
+        //console.log(myAllergies.length);
+        for(let i=0;i<myAllergies.length;i++){               
                 allergiesValue.push(ALLERGIES[myAllergies[i]]);
+                flag=allergiesValue[i];
+               // console.log(flag+"somethign");
+                if(isNaN(flag)){
+                        totalValue+="";
+                }else{
                 totalValue+=allergiesValue[i];
+                }
         }
 
-        return totalValue;
+        return `The pacient named ${name} has a score of ${totalValue} of the following  allergies: ${myAllergies}`;
 }
 
-let allergiesScore=(value) =>{
+let allergiesScore=(name,value) =>{
         let allergiesScore =[];
         let result =0;
         let j=0;
-        let qpasa=0;
         result = value.toString(2);
         binaryValues=0;
         allergieName ="";
@@ -48,15 +54,21 @@ let allergiesScore=(value) =>{
         for(i=result.length;i>=0;i--){
                                    
                         allergiesScore.push((result.charAt(i))*(Math.pow(2, j-1)));
-                        allergieName+= `${ALLERGIES_VALUES[allergiesScore[j]]} `;
-                        j++; 
+                       
+                        if(allergiesScore[j]<128 ){
+                                allergieName+=`${ALLERGIES_VALUES[allergiesScore[j]]} `;
+                                
+                        }else{ 
+                                allergieName+="";
+                                }
+                        j++;
         }
-       
-
-        return allergieName;
+        return `The pacient named ${name} has the folowing allergies: ${allergieName}with a total score of ${value}`;;
 }
 
-let personAllergies =["eggs", "penauts", "pollen"];
-let personScore=127;
-console.log(allergies(personAllergies));
-console.log(allergiesScore(personScore));
+let personAllergies =["eggs", "penauts", "pollen","cats"];
+let pacientName ="Hector";
+let otherPacient ="Julia";
+let personScore=31;
+console.log(allergies(pacientName,personAllergies));
+console.log(allergiesScore(otherPacient,personScore));
