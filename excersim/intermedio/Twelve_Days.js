@@ -29,10 +29,17 @@ const present={
 
 let twelveDays = (day) =>{
     let presents="";
-    for(let i=day;i>=1;i--){
-        presents+=`${present[i]}`;
+    let lyrics="";
+    j=1;
+    if(isNaN(day) ||(day<1 || day>12)){
+        return "Not possible check the input";
     }
-    return `On the ${days[day]} Christmas my true love gave to me: ${presents}`;
+    for(let i=1;i<=day;i++){
+        presents = presents.replace(/^/, `${present[i]}`);
+        lyrics+=`\n On the ${days[j]} Christmas my true love gave to me: ${presents} \n`;
+        j++;
+    }
+    return lyrics;
 }
 
 let day =12;
