@@ -24,6 +24,7 @@ let sieve = (initial, final) => {
   );
   return myPrimes;
 };
-let start = 2,
-  end = 500;
+
+let start = 2,end = 500;
+
 console.log(sieve(start, end));
