@@ -8,10 +8,14 @@ let rationalNumbers=(numerator1,denominator1,numerator2,denominator2)=>{
     resultNumerator=numerator1*numerator2;
     resultDenominator=denominator1*denominator2;
     let multiplication =`${resultNumerator}/${resultDenominator}`;
+    resultNumerator=numerator1*denominator2;
+    resultDenominator=numerator2*denominator1;
+    let divition=`${resultNumerator}/${resultDenominator}`;
     return `The operations of ${numerator1}/${denominator1} , ${numerator2}/${denominator2}
             Addition=${addition}
             Subtraction=${subtraction}
-            Multiplication=${multiplication}`;
+            Multiplication=${multiplication}
+            Divition=${divition}`;
 }
 let n1=10,d1=8,n2=30,d2=24;
 
