@@ -22,12 +22,21 @@ let rationalNumbers=(numerator1,denominator1,numerator2,denominator2)=>{
     resultNumerator=(numerator2**2);
     resultDenominator=(denominator2**2);
     exponentiation+=` ${resultNumerator}/${resultDenominator}`;
+
+    resultNumerator=(denominator1**2);
+    resultDenominator=(numerator1**2);
+    let exponentiationNegative=`${resultNumerator}/${resultDenominator}`;
+    resultNumerator=(denominator2**2);
+    resultDenominator=(numerator2**2);
+    exponentiationNegative+=` ${resultNumerator}/${resultDenominator}`;
+
     return `The operations of ${numerator1}/${denominator1} , ${numerator2}/${denominator2}
             Addition=${addition}
             Subtraction=${subtraction}
             Multiplication=${multiplication}
             Divition=${divition}
-            Exponentiation=${exponentiation}`;
+            Exponentiation=${exponentiation}
+            Exponentiation Negative=${exponentiationNegative}`;
 }
 let n1=10,d1=8,n2=30,d2=24;
 
