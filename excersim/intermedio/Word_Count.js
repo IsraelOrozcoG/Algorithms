@@ -2,24 +2,36 @@ let wordCount = (text) =>{
     let i=0;
     word ="";
     words=[];
+    count =0;
     do{
         word+=text.charAt(i);
-        if(text.charAt(i)==" "){
-            word=word.toLowerCase().replace(/\s/g, "");
+        if(text.charAt(i)=="."){
+            word=word.replace(/\./g," ");
+        }
+        if(text.charAt(i)==" "||i==text.length-1){
+            word=word.toLowerCase().replace(/\s|\!|\:|\'|\"/g, "");
+            
             words.push(word);
             word="";
         }
         i++;
     }while(i<text.length)
-    for(let j=0;j<words.length;j++){
-        for(let k=0;k<words.length;k++){
-            
+    let elementCount=words;
+    console.log(elementCount);
+    for (let i = 0; i < words.length; i++) {
+        let element = words[i];
+        if (elementCount[element]) {
+         elementCount[element] += 1;
+        } else {
+         elementCount[element] = 1;
         }
-    }
-    console.log(words);
-    return text;
+       }
+
+    //console.log(elementCount)
+    //console.log(words);
+    return elementCount;
 }
 
-let myText ="This is a great text this can be cool";
+let myText =`That's the password: 'PASSWORD 123'!", cried the Special Agent.So I fled.`;
 
 console.log(wordCount(myText));
