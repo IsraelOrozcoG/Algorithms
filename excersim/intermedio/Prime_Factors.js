@@ -21,5 +21,5 @@ let primeFactors = (number) =>{
     return `Prime factors of ${mynumber} :${factors}${i}`;
 }
 
-let number = 9;
+let number = 90;
 console.log(primeFactors(number))
