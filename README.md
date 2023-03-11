@@ -1,8 +1,10 @@
 # Este repositorio es usado para fines de aprendizaje.
-    
-    Los algoritmos realizados son de la pagina https://exercism.org del apartado de javascript
+  ## Paginas donde se han tomado los retos  
+   https://exercism.org
 
 ## Retos 
+<details>
+  <summary>Excercism</summary>
 <details>
   <summary>Retos Faciles</summary>
 
@@ -57,6 +59,10 @@
 [Two Fers](excersim/basico/Two_Fer.js)
 
 </details>
+<details>
+  <summary>Página de Excercism</summary>
 
 ![Alt text](img/exercismpage.jpg)
 
+</details>
+</details>
