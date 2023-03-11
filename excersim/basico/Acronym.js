@@ -1,12 +1,8 @@
 let acronym=(text)=>{
     let myAcronym="";
     for(let i=0;i<text.length;i++){
-        if(i==0){
-            myAcronym+=text.charAt(i);
-        }
-        if(text.charAt(i)==" "){
-            myAcronym+=text.charAt(i+1);
-        }
+        i==0 ? myAcronym+=text.charAt(i) : myAcronym+="";
+        text.charAt(i)==" " ? myAcronym+=text.charAt(i+1): myAcronym+=""; 
     }
     return myAcronym.toUpperCase();
 }
