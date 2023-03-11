@@ -1,4 +1,4 @@
-function acronym(text){
+let acronym=(text)=>{
     let myAcronym="";
     for(let i=0;i<text.length;i++){
         if(i==0){
