@@ -1,19 +1,15 @@
 let perfectNumbers=(num)=>{
+
     let addNumber=0;
     for(let i = 1; i < num; i++) {
-        if(num % i == 0) {
-            addNumber+=i;    
-        }
+
+        num % i == 0 ? addNumber+=i:addNumber+=0;
     }
-    if(num==addNumber){
-        return "Perfect";
-    }
-    if(num>addNumber){
-        return "Abundant";
-    }else{
-        return "Deficient";
-    }
+    return num==addNumber?`Perfect`
+        :num>addNumber?`Abundant`
+        :`Deficient`;
 }
+
 let n1=28,n2=36,n3=7;
 console.log(perfectNumbers(n1));
 console.log(perfectNumbers(n2));
