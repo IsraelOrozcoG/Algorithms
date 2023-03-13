@@ -1,4 +1,4 @@
-function perfect_Numbers(num){
+let perfectNumbers=(num)=>{
     let addNumber=0;
     for(let i = 1; i < num; i++) {
         if(num % i == 0) {
@@ -15,6 +15,6 @@ function perfect_Numbers(num){
     }
 }
 let n1=28,n2=36,n3=7;
-console.log(perfect_Numbers(n1));
-console.log(perfect_Numbers(n2));
-console.log(perfect_Numbers(n3));
+console.log(perfectNumbers(n1));
+console.log(perfectNumbers(n2));
+console.log(perfectNumbers(n3));
