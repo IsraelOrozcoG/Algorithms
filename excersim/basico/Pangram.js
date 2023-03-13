@@ -2,11 +2,13 @@ let pangram=(text)=>{
     
     let regex =/([a-z])(?!.*\1)/gi; //All alphabet [a-z] at least 1 time each letter ignore lowercase uppercase  g global
     let result = text.match(regex).length === 26; 
+    return result==true?"It is a pangram" :"Not a pangram";
+    /*
      if(result==true){
         return "It is a pangram"
      }
 
-    return "Not a pangram";
+    return "Not a pangram";*/
 }
 
 let phrase="The quick brown fox jumps over the lazy dog.";
