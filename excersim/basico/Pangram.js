@@ -1,4 +1,4 @@
-function pangram(text){
+let pangram=(text)=>{
     
     let regex =/([a-z])(?!.*\1)/gi; //All alphabet [a-z] at least 1 time each letter ignore lowercase uppercase  g global
     let result = text.match(regex).length === 26; 
