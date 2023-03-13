@@ -7,7 +7,7 @@ let nucleotideCount=(nucleotide)=>{
         :nucleotide.charAt(i)==="G"? g++
         :t++;
     }
-    return countedNucleotide =nucleotide+"-> A:"+a+" C:"+c+" G:"+g+" T:"+t;
+    return countedNucleotide =`${nucleotide}-> A:"${a}" C:"${c}" G:"${g}" T:"${t}"`;
 }
 let nucleotide="AAGCTACA";
 
