@@ -1,13 +1,16 @@
-function roman_numerals(number){
-    if(number.isNaN || number<=0 || number>3000){
-        return "Not Posible";
-    }
+let romanNumerals=(number)=>{
+    
     let romanNumber="";
     let help;
     let unit=["NAN","I","II","III","IV","V","VI","VII","VIII","IX"];
     let deceins=["NAN","X","XX","XXX","XL","L","LX,LXX","LXXX","XC"];
     let centen=["NAN","C","CC","CCC","XD","D","DC,DCC","DCCC","MC"];
     let miles=["NAN","M","MM","MMM"];
+    
+    if(number.isNaN || number<=0 || number>3999){
+        return "Not Posible";
+    }
+
     if(number>=1000){
     help=Math.trunc(number/1000);
     romanNumber+=miles[help];
@@ -35,5 +38,5 @@ function roman_numerals(number){
     return romanNumber;
 }
 
-let myNumber=1546;
-console.log(roman_numerals(myNumber));
+let myNumber=89;
+console.log(romanNumerals(myNumber));
