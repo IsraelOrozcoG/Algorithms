@@ -1,4 +1,4 @@
-function Rna_transcription(nucleotide1,nucleotide2,nucleotide3,nucleotide4){
+let rnaTranscription=(nucleotide1,nucleotide2,nucleotide3,nucleotide4)=>{
     let strand=[nucleotide1,nucleotide2,nucleotide3,nucleotide4];
     let newStrand="";
     for(let i=0;i<strand.length;i++){
@@ -23,4 +23,4 @@ function Rna_transcription(nucleotide1,nucleotide2,nucleotide3,nucleotide4){
 }
 
 let s1="a",s2="g",s3="c",s4="t";
-console.log("The RNA is "+Rna_transcription(s1,s2,s3,s4));
+console.log("The RNA is "+rnaTranscription(s1,s2,s3,s4));

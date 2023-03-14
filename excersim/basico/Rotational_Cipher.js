@@ -11,5 +11,5 @@ function rotationalCipher(rot){
     }while(i!=26)
 }
 
-let rot=6;
+let rot=10;
 rotationalCipher(rot);
