@@ -60,6 +60,46 @@
 
 </details>
 <details>
+  <summary>Retos Intermedios</summary>
+
+  [Allergies](excersim/intermedio/Allergies.js)
+
+  [Bob](excersim/intermedio/Bob.js)
+
+  [Book Store](excersim/intermedio/Book_Store.js)
+
+  [Grains](excersim/intermedio/Grains.js)
+
+  [Linked List](excersim/intermedio/Linked_List.js)
+
+  [Luhn](excersim/intermedio/Luhn.js)
+
+  [Nth Prime](excersim/intermedio/Nth_Prime.js) 
+
+  [Nucleotide Count](excersim/intermedio/Nucleotide_Count.js)
+
+  [OCR Numbers](excersim/intermedio/OCR_Numbers.js)
+
+  [Pascal Triangle](excersim/intermedio/Pascal_Triangle.js)
+
+  [Prime Factors](excersim/intermedio/Prime_Factors.js)
+
+  [Rational Numbers](excersim/intermedio/Rational_Numbers.js)
+
+  [Robot Name](excersim/intermedio/Robot_Name.js)
+
+  [Sieve](excersim/intermedio/Sieve.js)
+
+  [Simple Cipher](excersim/intermedio/Simple_Cipher.js)
+
+  [Twelve Days](excersim/intermedio/Twelve_Days.js)
+
+  [Word Count](excersim/intermedio/Word_Count.js)
+
+  [Wordy](excersim/intermedio/Wordy.js)
+
+  </details>
+<details>
   <summary>Página de Excercism</summary>
 
 ![Alt text](img/exercismpage.jpg)
