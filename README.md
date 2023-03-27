@@ -82,6 +82,8 @@
 
   [Pascal Triangle](excersim/intermedio/Pascal_Triangle.js)
 
+  [Pig Latin](excersim/intermedio/Pig_Latin.js)
+
   [Prime Factors](excersim/intermedio/Prime_Factors.js)
 
   [Rational Numbers](excersim/intermedio/Rational_Numbers.js)
