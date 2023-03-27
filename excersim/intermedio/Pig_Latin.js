@@ -1,15 +1,37 @@
 let pigLatin =(text) =>{
-    text=text.toLowerCase();
+    //text=text.toLowerCase();
     let vowelStart =/^[a|e|i|o|u]\D+[a-z]/ig;
+    //let letters="";
+    //let vowels =/^[a|e|i|o|u]\D/ig;
+
+    text=text.toLowerCase();
+    let vowels =/^[a|i|e|o|u]/ig
+    let letters="";
+    let flag = false;
+    let j=0;
+    let letter = "";
+
     if(vowelStart.test(text)==false){
-        text+=text.charAt(0)+"ay";
-        text=text.replace(/^[a-z]/g,"")
-    }else{
+        do{
+            letter = text.charAt(j);
+            if(vowels.test(letter)==false){
+                letters+=text.charAt(j);
+                //console.log(letters);
+            }
+            else{
+                flag=true;
+            }
+            j++;
+        }while(flag!=true)
+        text+= `${letters}ay`
+    }
+    else{
         text+="way";
     }
 
-    return text;
+    return `${text}  ${letters}` ;
 }
+
 
 let phrase ="Mouse";
 let phrase2="algorithm";
