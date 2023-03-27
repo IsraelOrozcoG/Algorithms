@@ -1,8 +1,7 @@
 let pigLatin =(text) =>{
-    //text=text.toLowerCase();
+
     let vowelStart =/^[a|e|i|o|u]\D+[a-z]/ig;
-    //let letters="";
-    //let vowels =/^[a|e|i|o|u]\D/ig;
+
 
     text=text.toLowerCase();
     let vowels =/^[a|i|e|o|u]/ig
@@ -15,18 +14,18 @@ let pigLatin =(text) =>{
         do{
             letter = text.charAt(j);
             if(vowels.test(letter)==false){
-                letters+=text.charAt(j);
-                //console.log(letters);
+                letters+=text.charAt(j);               
             }
             else{
                 flag=true;
             }
             j++;
         }while(flag!=true)
+        text = text.replace(letters, "");
         text+= `${letters}ay`
     }
     else{
-        text+="way";
+        text+=`way`;
     }
 
     return `${text}  ${letters}` ;
