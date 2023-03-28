@@ -27,7 +27,7 @@ let palindromeProducts =() =>{
             }
         }
    } 
-   return 0;
+   
 }
 
 console.log(palindromeProducts());
