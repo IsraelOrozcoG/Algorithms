@@ -1,7 +1,7 @@
 let diamond = (pattern)=>{
     
     let diamond ="";
-    let primes = {1:1, 2:2, 3:3,   5:5,   7:7,  11:11,  13:13,  17:17,  19:19,  23:23};
+    let alphabet =  ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
     for (let i = 1; i <= pattern; i++) {
         
@@ -12,7 +12,7 @@ let diamond = (pattern)=>{
         
         for (let k = 0; k < 2 * i - 1; k++) {
             if(k == 0 || k ==2*i-2 ){
-                diamond+=i;
+                diamond+=alphabet[i-1];
             }
   
             else{
@@ -25,21 +25,26 @@ let diamond = (pattern)=>{
         diamond+=`\n`;
       }
 /************************** */
-/*
-      for (let i = 1; i <= 5 - 1; i++) {
-        
-        for (let j = 0; j < i; j++) {
-           diamond+=' ';
-        }
-        
-        for (let k = (5 - i) * 2 - 1; k > 0; k--) {
-          diamond+=i;
-        }
-        diamond+=`\n`;
-      }*/
+  for(i = pattern-1 ; i > 0; i--){
+  for(let j = 1; j < pattern-i+1 ; j++ ){
+    diamond +=`-`;
+  }
+  for(let j = 1; j <= 2 * i - 1; j++ ){
+    if(j == 1 || j == 2 * i - 1 ){
+      diamond += alphabet[i-1];
+    }
+    else{
+      diamond += `*`;
+    }
+  }
+    for(j = 1; j < pattern - i + 1; j++){
+    diamond += `-`;
+  }
+    diamond+=`\n`;
+}
 
     return diamond
 }
 
-let letter = 5;
+let letter = 25;
 console.log(diamond(letter));
