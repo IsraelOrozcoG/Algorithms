@@ -54,8 +54,8 @@ let diamond = (pattern)=>{
     return diamond
 }
 
-let letter = 'V';
-let letter2 = 'c';
+let letter = 'G';
+let letter2 = 'z';
 let letter3 = 'rweqeQWE';
 let letter4 = 2356;
 let letter5 = 2;

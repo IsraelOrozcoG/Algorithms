@@ -68,6 +68,8 @@
 
   [Book Store](excersim/intermedio/Book_Store.js)
 
+  [Diamond](excersim/intermedio/diamond.js)
+
   [Grains](excersim/intermedio/Grains.js)
 
   [Linked List](excersim/intermedio/Linked_List.js)
