@@ -14,14 +14,15 @@ let matrix = () => {
     for (let i = 0; i <= 2; i++) {
         for (let j = 2; j >= 0; j--) {
 
-            matrizColumns+="["+multidimensionalArray[[j],[i]]+"]";
+            matrizColumns+="["+multidimensionalArray[[i],[j]]+"]";
+            
            
         }
         
         matrizColumns+="\n";
     }
 
-    return matriz+"\n"+matrizColumns+"\n";
+    return matriz+"\n"+multidimensionalArray+"\n";
 }
 
 console.log(matrix());
