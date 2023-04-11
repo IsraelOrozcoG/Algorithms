@@ -1,18 +1,17 @@
 function rotationalCipher(rot){
     let alphabet="abcdefghijklmnopqrstuvwxyz"
-    let cipher="";
-    let i=0;
-    if(rot==26|| rot<0){
-        return `Outside the alphabet`;
+    let isAlphabet=/[a-z]/i
+    let placeOfLetter= 0;
+    rot=rot.toLowerCase();
+    if(isAlphabet.test(rot)== false || rot.length>1){
+        return -1;
+    } 
+    while( rot != alphabet.charAt(placeOfLetter) ){
+        placeOfLetter++;
     }
-    console.log(alphabet.charAt(rot));
-    do{
-        
-        cipher+=alphabet.charAt(rot+i);
-        console.log(cipher)
-        i++;
-    }while(i!=26)
+    return placeOfLetter;
+
 }
 
-let rot=-1;
+let rot=`h`;
 console.log(rotationalCipher(rot));
