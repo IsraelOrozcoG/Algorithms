@@ -72,6 +72,8 @@
 
   [Grains](excersim/intermedio/Grains.js)
 
+  [ISBN Verifier](excersim/intermedio/ISBN_Verifier.js)
+
   [Linked List](excersim/intermedio/Linked_List.js)
 
   [Luhn](excersim/intermedio/Luhn.js)
