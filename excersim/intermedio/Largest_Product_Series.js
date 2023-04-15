@@ -5,7 +5,7 @@ let largestSeriesProduct = (series,span) =>{
     let collection= [];
     const productSeries = [];
     let operation = 0, result = 1;
-    let arr = [[,]]; //Para unir los 2 arrays
+    let arr = [[,]]; //Unite 2 arrays
 
 
     for(let i = 0 ; i< size*span; i+=span){
@@ -34,22 +34,24 @@ let largestSeriesProduct = (series,span) =>{
     }
 
     for (let j =0;j<=collection.length;j++){
+
     arr.push (  [collection[j], productSeries[j]]);
     }
-    const obj = Object.fromEntries(arr);
-    console.log(obj);
+
+    let obj = Object.fromEntries(arr);
+   
 
 
-    
-    let keysSorted = Object.keys(obj).sort(function(a,b){return obj[a]-obj[b]})
-    console.log(keysSorted) 
+    obj=Object.entries(obj).sort((a,b) => b[1]-a[1])
+  
+  
 
 
 
-    return `Multiplicaciones ${productSeries} Coleccion ${collection} `;
+    return `The highest product of ${series}: \n Using steps of ${span} by ${span} are the numbers ${obj [0]} as a result`;
 } 
 
-let quantity = 6;
-let number ="987654321";
+let quantity = 3;
+let number ="63915";
 
 console.log(largestSeriesProduct(number,quantity));
