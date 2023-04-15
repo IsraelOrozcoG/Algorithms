@@ -3,30 +3,53 @@ let largestSeriesProduct = (series,span) =>{
     let flag  = 0;
     let concat = ``;
     let collection= [];
-    let aux = ``;
+    const productSeries = [];
+    let operation = 0, result = 1;
+    let arr = [[,]]; //Para unir los 2 arrays
+
 
     for(let i = 0 ; i< size*span; i+=span){
         for(let j = 0; j < span; j++){
             concat += series.charAt(flag);
-            flag ++;
-            
+            operation = + series.charAt(flag)
+            result *= operation;           
+            flag ++;   
         }
+
             
             if(concat.length == span){
                 collection.push (concat);
+                productSeries.push(result);
+
+
+                
             }
-            concat += `\n`;
+        
+            
             flag -=(span-1);
             concat = ``;
-            //concat += series.charAt(i);
+            result = 1;
             
             
     }
 
-    return `Coleccion ${collection}`;
+    for (let j =0;j<=collection.length;j++){
+    arr.push (  [collection[j], productSeries[j]]);
+    }
+    const obj = Object.fromEntries(arr);
+    console.log(obj);
+
+
+    
+    let keysSorted = Object.keys(obj).sort(function(a,b){return obj[a]-obj[b]})
+    console.log(keysSorted) 
+
+
+
+    return `Multiplicaciones ${productSeries} Coleccion ${collection} `;
 } 
 
-let quantity = 2;
+let quantity = 6;
 let number ="987654321";
 
 console.log(largestSeriesProduct(number,quantity));
