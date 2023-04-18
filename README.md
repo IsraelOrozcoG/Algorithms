@@ -74,6 +74,8 @@
 
   [ISBN Verifier](excersim/intermedio/ISBN_Verifier.js)
 
+  [Largest Product Series](excersim/intermedio/Largest_Product_Series.js)
+
   [Linked List](excersim/intermedio/Linked_List.js)
 
   [Luhn](excersim/intermedio/Luhn.js)
