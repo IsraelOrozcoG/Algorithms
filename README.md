@@ -64,6 +64,8 @@
 
   [Allergies](excersim/intermedio/Allergies.js)
 
+  [Beer Song](excersim/intermedio/Beer_Song.js)
+
   [Bob](excersim/intermedio/Bob.js)
 
   [Book Store](excersim/intermedio/Book_Store.js)
