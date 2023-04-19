@@ -96,6 +96,8 @@
 
   [Rational Numbers](excersim/intermedio/Rational_Numbers.js)
 
+  [Resistor Color Trio](excersim/intermedio/Resistor_Color_Trio.js)
+
   [Robot Name](excersim/intermedio/Robot_Name.js)
 
   [Sieve](excersim/intermedio/Sieve.js)

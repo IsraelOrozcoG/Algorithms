@@ -30,10 +30,6 @@ let resistorColorTrio = (c1,c2,c3) =>{
     prefix = zeros.replace(/000000/i, "");
     prefix +=` mega`;
     }
-    if(zeros.length >=6 && zeros.length <= 8 ){
-        prefix = zeros.replace(/000000/i, "");
-        prefix +=` mega`;
-        }
         if(zeros.length >=9 ){
             prefix = zeros.replace(/000000000/i, "");
             prefix +=` giga`;
