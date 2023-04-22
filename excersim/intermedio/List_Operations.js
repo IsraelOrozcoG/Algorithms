@@ -23,7 +23,7 @@ class List {
     }
 
     lengthList () {
-
+         return this.size;
     }
 
     mapList () {
